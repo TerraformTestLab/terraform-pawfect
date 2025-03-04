@@ -5,6 +5,12 @@ terraform {
       version = "~> 3.5.1"
     }
   }
+
+  backend "s3" {
+    bucket = "terraformtestlabatlas"
+    key = "terraform.tfstate"
+    region = "us-west-1"
+  }
 }
 
 provider "random" {}
