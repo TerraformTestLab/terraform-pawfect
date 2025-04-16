@@ -12,6 +12,13 @@ terraform {
   #     name = "terraform-pawfect"
   #   }
   # }
+
+  cloud { 
+    organization = "SujaysTerraformLab" 
+    workspaces { 
+      name = "terraform-pawfect-cli" 
+    } 
+  } 
 }
 
 provider "random" {}
