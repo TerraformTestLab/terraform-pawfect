@@ -6,12 +6,12 @@ terraform {
     }
   }
 
-  cloud {
-    organization = "SujaysTerraformLab"
-    workspaces {
-      name = "terraform-pawfect"
-    }
-  }
+  # cloud {
+  #   organization = "SujaysTerraformLab"
+  #   workspaces {
+  #     name = "terraform-pawfect"
+  #   }
+  # }
 }
 
 provider "random" {}
